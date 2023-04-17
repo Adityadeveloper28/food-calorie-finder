@@ -1,0 +1,200 @@
+body {
+  background-color: #f6fbf4;
+}
+
+
+h1 {
+  font-weight: 300;
+}
+
+h1 strong {
+  font-weight: 600;
+  color: #4b8673;
+}
+
+.inputstyle {
+  padding: 20px !important;
+}
+
+.whoop {
+  background-color: #5fd068;
+  width: 8em;
+  font-size: 30px !important;
+  color: #ffffff;
+}
+
+.caloriescont {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.caloriescont ul {
+  padding: 0px;
+}
+
+.caloriescont ul li {
+  list-style: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+  width: 80%;
+}
+
+.caloriescont h3 {
+  color: #4b8673;
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.caloriescont h5 {
+  color: #4b8673;
+}
+
+.servingsize {
+  background-color: #000000;
+  padding: 10px;
+  color: #ffffff;
+}
+/* Style the popup box container */
+.popup-box {
+  display: none; /* Hide the box by default */
+  position: fixed; /* Position the box relative to the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 9999; /* Set a high z-index to ensure it appears on top of other content */
+}
+
+/* Style the popup box content */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the box horizontally and vertically */
+}
+
+/* Style the label and input elements */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+}
+
+/* Style the OK button */
+button[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Hover effect for the OK button */
+button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+.popup{
+  width: 400px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.5s top 0.5s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup .tick{
+  width: 100px;
+  margin-top: -50px;
+}
+
+.popup h2{
+  font-size: 30px;
+  font-weight: 500px;
+  margin: 20px 0 10px;
+}
+
+.popup input{
+  width: 200px;
+  height: 40px;
+  margin-left: 20px;
+  border: 2px solid black;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+::placeholder{
+  padding: 0 20px;
+}
+
+
+.ok-btn{
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+  background: transparent;
+  background-color: rgb(85, 214, 141);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  border: 0;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+
+
+.ok-btn:hover{
+  background-color: rgb(35, 188, 101);
+}
+
+.result h3{
+  color: #713939;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+#result_run{
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  color: #99b90f;
+}
+
+#result_walk{
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
